@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<link rel="stylesheet" type="text/css" href="css/master.css" />
+
+<script type="text/javascript" charset="utf-8" src="js/jq.mobi.min.js"></script>
+<script type="text/javascript" src="js/jq.css3animate.js"></script>
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="js/using-iscroll.js"></script>
+
+</head>
+
+
+<body>
+
+
+<div id="wrapper">
+
+	<ul id="scroller">
+		<div id="pullDown">
+			<span class="pullDownIcon"></span><span class="pullDownLabel">Pull down to refresh</span>
+		</div>
+		
+		<div id="front-header">
+		
+				<canvas id="myCanvas" width="140" height="140"></canvas>
+				<script type="text/javascript">
+					function drawCircle(){
+						var canvas = document.getElementById("myCanvas");
+        
+						var ctx = canvas.getContext("2d");
+						
+						var grd=ctx.createLinearGradient(70,8,70,132);
+						grd.addColorStop(0,"#B0B0B0");
+						grd.addColorStop(1,"white");
+						var angle=0.4;
+					
+						ctx.fillStyle=grd;
+						ctx.strokeStyle="#E1E1E1";
+						ctx.beginPath();
+						ctx.arc(70,70,62,0,2*Math.PI);
+						ctx.fill();
+						ctx.stroke();
+					
+						ctx.beginPath();
+						ctx.moveTo(70,70);
+						ctx.arc(70,70,56,0,2*Math.PI,true);
+						ctx.fill();
+						ctx.stroke();
+					
+						ctx.fillStyle ="YellowGreen";
+						ctx.beginPath();
+						ctx.moveTo(70,70);
+						ctx.arc(70,70,56,0,angle*Math.PI,false);
+						ctx.fill();
+						ctx.stroke();
+					
+					
+						ctx.fillStyle="#eef3e2";
+						ctx.beginPath();
+						ctx.arc(70,70,49,0,2*Math.PI); 	 
+						ctx.fill();
+						ctx.stroke();
+					
+						var percentage=angle/2*100;
+						document.write("<div id=\"percentage\">"+percentage+"</div>"); 
+						var d=new Date()
+						var day=d.getDate()
+						var month=d.getMonth() + 1
+						var year=d.getFullYear()
+
+						document.write("<div id=\"date\">"+ day + "/" + month + "/" + year+"</div>")
+                
+						}
+				
+					drawCircle();
+				</script>
+				<p>%</p>
+				<h>Loiter项目管理</h><br />
+				<span id="front-header-producer">温俊强</span><br />
+				<span id="front-header-pro-description">
+					项目管理移动客户端
+				</span><br />
+		</div>
+	
+		<div class="content1">
+			
+			<div class="content1-header" align="left">
+				第一阶段
+			</div>
+			
+			<div class="content1-area">
+
+					
+			    <div class="content1-text">
+						
+					<span class="content1-picture">
+						<a href="www.baidu.com">
+						<img class="image" src="source/10.jpg"  />
+						</a>
+					</span>
+					
+					<span class="content1-note">主要功能设计</span>
+				
+					<div class="content1-date">
+						12:34/3月18
+					</div>
+					
+					<div class="content1-data-ending">
+						23:59/3月20
+					</div>
+				
+				</div>
+			
+				<hr />
+				
+				<div class="content1-text">
+						
+					<span class="content1-picture">
+						<a href="www.baidu.com">
+						<img class="image" src="source/10.jpg"  />
+						</a>
+					</span>
+					
+					<span class="content1-note">主要功能设计</span>
+					
+					<div class="content1-date">
+						12:34/3月18
+					</div>
+					
+					<div class="content1-data-ending">
+						23:59/3月20
+					</div>
+				
+				</div>
+			
+				<hr />
+				
+				<div class="content1-text">
+						
+					<span class="content1-picture">
+						<a href="www.baidu.com">
+						<img class="image" src="source/10.jpg"  />
+						</a>
+					</span>
+					
+					<span class="content1-note">主要功能设计</span>
+			
+					<div class="content1-date">
+						12:34/3月18
+					</div>
+					
+					<div class="content1-data-ending">
+						23:59/3月20
+					</div>
+				
+				</div>
+			
+				<hr />
+			
+			</div>
+			<div class="content1-ender"></div>
+		</div>
+		    
+		<div class="content1">
+			
+			<div class="content1-header" align="left">
+				第一阶段
+			</div>
+			
+			<div class="content1-area">
+
+					
+			    <div class="content1-text">
+						
+					<span class="content1-picture">
+						<a href="www.baidu.com">
+						<img class="image" src="source/10.jpg"  />
+						</a>
+					</span>
+					
+					<span class="content1-note">主要功能设计</span>
+				
+					<div class="content1-date">
+						12:34/3月18
+					</div>
+					
+					<div class="content1-data-ending">
+						23:59/3月20
+					</div>
+				
+				</div>
+			
+				<hr />
+				
+				<div class="content1-text">
+						
+					<span class="content1-picture">
+						<a href="www.baidu.com">
+						<img class="image" src="source/10.jpg"  />
+						</a>
+					</span>
+					
+					<span class="content1-note">主要功能设计</span>
+					
+					<div class="content1-date">
+						12:34/3月18
+					</div>
+					
+					<div class="content1-data-ending">
+						23:59/3月20
+					</div>
+				
+				</div>
+			
+				<hr />
+				
+				<div class="content1-text">
+						
+					<span class="content1-picture">
+						<a href="www.baidu.com">
+						<img class="image" src="source/10.jpg"  />
+						</a>
+					</span>
+					
+					<span class="content1-note">主要功能设计</span>
+			
+					<div class="content1-date">
+						12:34/3月18
+					</div>
+					
+					<div class="content1-data-ending">
+						23:59/3月20
+					</div>
+				
+				</div>
+			
+				<hr />
+			
+			</div>
+			<div class="content1-ender"></div>
+		</div>
+
+		<div class="content1">
+			
+			<div class="content1-header" align="left">
+				第一阶段
+			</div>
+			
+			<div class="content1-area">
+
+					
+			    <div class="content1-text">
+						
+					<span class="content1-picture">
+						<a href="www.baidu.com">
+						<img class="image" src="source/10.jpg"  />
+						</a>
+					</span>
+					
+					<span class="content1-note">主要功能设计</span>
+				
+					<div class="content1-date">
+						12:34/3月18
+					</div>
+					
+					<div class="content1-data-ending">
+						23:59/3月20
+					</div>
+				
+				</div>
+			
+				<hr />
+				
+				<div class="content1-text">
+						
+					<span class="content1-picture">
+						<a href="www.baidu.com">
+						<img class="image" src="source/10.jpg"  />
+						</a>
+					</span>
+					
+					<span class="content1-note">主要功能设计</span>
+					
+					<div class="content1-date">
+						12:34/3月18
+					</div>
+					
+					<div class="content1-data-ending">
+						23:59/3月20
+					</div>
+				
+				</div>
+			
+				<hr />
+				
+				<div class="content1-text">
+						
+					<span class="content1-picture">
+						<a href="www.baidu.com">
+						<img class="image" src="source/10.jpg"  />
+						</a>
+					</span>
+					
+					<span class="content1-note">主要功能设计</span>
+			
+					<div class="content1-date">
+						12:34/3月18
+					</div>
+					
+					<div class="content1-data-ending">
+						23:59/3月20
+					</div>
+				
+				</div>
+			
+				<hr />
+			
+			</div>
+			<div class="content1-ender"></div>
+		</div>
+		
+	</ul>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".content1-area").hide();
+			$(".content1-header").click(function(){
+				$(this).children(".content1-area").show();
+			})
+		});
+	</script>
+
+</div>
+
+
+<div id="myScroll1">
+	<ul id="scroller1">
+		<div id="wrap" >
+		<div id="pro-menu-head">
+			<span class="pro-menu-picture">
+				<a href="www.baidu.com">
+					<img  class="pro-menu-img" src="source/10.jpg"  />
+				</a>
+			</span>
+			<span id="pro-menu-head-word1">
+				<li>Vaka Zheng</li>
+				<p>用户界面</p>
+			</span>
+		</div>
+		<div id="pro-menu-head2">
+			<li>我的项目</li>
+		</div>
+		<div id="pro-menu-item">
+			<li>黄埔军校可视化方案</li>
+		</div>
+		<div id="pro-menu-item">
+			<li>Yanis品牌包装计划</li>
+		</div>
+		<div id="pro-menu-item">
+			<li>Holly项目</li>
+		</div>
+		<div id="pro-menu-item">
+			<li>大学生酸梅计划</li>
+		</div>
+
+	</div>
+	</ul>
+</div>
+
+<div id="myScroll2">	
+	<ul id="scroller2">
+		<div id="wrap2">
+	<div id="news-head">
+		<li>消息</li>
+	</div>
+	
+	<div id="news-content">
+		<div id="pro-name">Loiter项目管理</div>
+		<div id="pro-task">/用户界面初稿</div>
+		<div id="pro-trends">已审核通过！</div>
+		<div id="comment-data">09:30 3月22</div>
+	</div>
+	
+	<div id="news-content">
+		<div id="pro-name">Loiter项目管理</div>
+		<div id="pro-task">/用户界面初稿</div>
+		<div id="pro-trends">可不可以快点！</div>
+		<div id="comment-data">12:30 3月24</div>
+	</div>
+	
+	<div id="news-content">
+		<div id="pro-name">Loiter项目管理</div>
+		<div id="pro-task">/用户界面初稿</div>
+		<div id="pro-trends">修改设计！！</div>
+		<div id="comment-data">09:30 3月22</div>
+	</div>
+</div>
+	</ul>
+</div>
+
+</body>
+</html>
